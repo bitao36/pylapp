@@ -64,10 +64,13 @@ pip install -r requirements.txt
 
 ### Environment Variables
 
-You must create a file .env and to add the following environment variables to customize the connection to the database:
+To test the project i suggest that you use polar tool to create a lightning network with two LND nodes.
+Then you select one node and  must copy files tls.cert,invoices.macaroon y admin.macaroon to credentials folder.
+
+You must create a file .env and to add the following environment variables to customize the connection to the LND node selected:
 
 ```bash=
-LND_RPC_ADDRESS=127.0.0.1:10001
+LND_RPC_ADDRESS=127.0.0.1:port
 LND_TLS_CERT_PATH=credentials/tls.cert
 LND_INVOICE_MACAROON_PATH=credentials/invoices.macaroon
 LND_ADMIN_MACAROON_PATH=credentials/admin.macaroon
